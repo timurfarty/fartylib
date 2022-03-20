@@ -1,0 +1,53 @@
+<!DOCTYPE-html>
+<html lang='ru'>
+	<head>
+		<title>Мой 1 проект</title>
+		<meta http-equiv='Content-type' content='text/html;charset=UTF-8' />
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/stile.css">
+	</head>
+	<body>
+		<form action="#" method="post" enctype="multipart/form-data"></form>
+		<div class="shap_glav">
+			<div class="shap">
+				<a class="logot" href="index.html">
+					<div class="logo">
+						<img class="logo_book" src="img/книга.jpg">
+					</div>
+					<p class="farty">SCHOOL</p>
+					<p class="lib">LIBRARY</p>
+				</a>
+				<div class="poisk">
+					<input type="text" placeholder="Введите название..." class="poisk_fon">
+					<a class="poisk_bt" href="index3.html">
+						<i class="fas fa-search"></i>
+					</a>
+				</div>
+				<img class="mm" src="img/mm.png"></img>
+				<div class="books">
+					<a class="up_book" href="index2.html">ВСЕ КНИГИ</a>
+					<a class="down_book" href="index3.html">МОИ КНИГИ</a>
+				</div>
+		    </div>
+		</div>
+		<div class="container3">
+			<div class="my_book_text">
+				<p>Мои книги</p>
+			</div>
+			<div class="my_book">
+			</div>
+		</div>
+		<script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+		<script type="text/javascript">
+			var archive = {},
+		        keys = Object.keys(localStorage),
+		        i = keys.length;
+
+		    for (var a in localStorage) {
+		    	const cartWrapper = document.querySelector('.my_book');
+				cartWrapper.insertAdjacentHTML('beforeend', localStorage[a]);
+			}
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
